@@ -10,7 +10,7 @@
     <title>Email Project 1</title>
     <style>
         /* desktop */
-        @media only screen and (min-width: 960px) {
+        @media only screen and (min-width: 961px) {
             .container {
                 width: 960px;
             }
@@ -18,12 +18,46 @@
             body .header-left .logo {
                 margin-top: 57px !important;
             }
+
+            .main-row {
+                padding: 0 50px;
+            }
+            
+            .info-img-row {
+                text-align: center;
+            }
+
+            .info-img-row img {
+                max-width: 611px;
+            }
+
+            .advance-row {
+                padding-left: 50px !important;
+                padding-right: 50px !important;
+            }
+
+            .gallery-row .gallery-row-left {
+                padding: 0 50px !important;
+            }
+
+            .gallery-row .gallery-row-center {
+                padding: 0 50px !important;
+            }
+
+            .gallery-row .gallery-row-right {
+                padding: 0 50px !important;
+            }
         }
 
         /* tablet */
         @media only screen and (max-width: 960px) {
             .container {
                 width: 600px;
+            }
+
+            .advance-row {
+                padding-left: 30px !important;
+                padding-right: 30px !important;
             }
         }
 
@@ -41,17 +75,57 @@
                 width: 100%;
             }
 
+            .advance-row .advance-pic {
+                width: 100%;
+            }
+
             .advance-row-text-left {
                 width: 100%;
                 text-align: center;
+                padding-right: 0px !important;
             }
             .advance-row-text-right {
                 width: 100%;
                 text-align: center;
+                padding-left: 0px !important;
             }
 
-            .advance-row-text-left img {
-                align: middle !important;
+            .advance-row .store-link {
+                text-align: center !important;
+            }
+
+            .gallery-row .gallery-row-left {
+                width: 100% !important;
+                padding: 20px 50px !important;
+            }
+
+            .gallery-row .gallery-row-center {
+                width: 100% !important;
+                padding: 20px 50px !important;
+            }
+
+            .gallery-row .gallery-row-right {
+                width: 100% !important;
+                padding: 20px 50px !important;
+            }
+
+            .features-row .features-top-row .features-top-row-left {
+                width: 100% !important;
+            }
+            .features-row .features-top-row .features-top-row-right {
+                width: 100% !important;
+            }
+            .features-row .features-middle-row .features-middle-row-left {
+                width: 100% !important;
+            }
+            .features-row .features-middle-row .features-middle-row-right {
+                width: 100% !important;
+            }
+            .features-row .features-bottom-row .features-bottom-row-left {
+                width: 100% !important;
+            }
+            .features-row .features-bottom-row .features-bottom-row-right {
+                width: 100% !important;
             }
         }
     </style>
@@ -143,7 +217,7 @@
                     <!-- end of header row -->
                     <!-- Start of main row -->
                     <tr>
-                        <td align="center" style="background-color: #fafafa; padding-bottom: 68px;">
+                        <td align="center" style="background-color: #fafafa; padding-bottom: 68px;" class="main-row">
                             <h3
                                 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 24px; font-weight: 500; margin: 60px 0 50px 0; ">
                                 Hero let's you...</h3>
@@ -272,14 +346,14 @@
                                             <tr>
                                                 <td align="left">
                                                     <p
-                                                        style="text-decoration: none; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333;  font-size: 13px; padding-right: 20px; margin-top: 10px; margin-left: 13px;">
+                                                        style="text-decoration: none; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333;  font-size: 13px; margin-top: 10px;">
                                                         The Strong museum has collected more than 55,000 video games and
                                                         related artifacts from the history of gaming.</p>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr class="store-link" style="text-align: right;">
                                                 <td>
-                                                    <img style="margin-top: 20px;" align="right"
+                                                    <img style="margin-top: 20px;" 
                                                         src="../email-1/images/appstore.png">
                                                 </td>
                                             </tr>
@@ -290,7 +364,7 @@
                                             <tr>
                                                 <td align=" left">
                                                     <p
-                                                style="text-decoration: none; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333;  font-size: 13px; padding-right: 20px; margin-top: 10px; margin-left: 13px;">
+                                                style="text-decoration: none; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333;  font-size: 13px; margin-top: 10px;">
                                                 Remote Mouse lets you use your Iphone, Android or Windows Phone as a
                                                 touchpad to control your onscreen cursor in a pinch.</p>
 
@@ -298,9 +372,9 @@
                                             </tr>
                                         
                                 
-                                            <tr>
+                                            <tr class="store-link" style="text-align: left;">
                                                 <td>
-                                                        <img style="margin-top: 20px;" align="left"
+                                                        <img style="margin-top: 20px;"
                                                         src="../email-1/images/playstore.png">
                                                 </td>
                                             </tr>
@@ -516,13 +590,13 @@
                                 <!-- Start of middle row-->
                                 <tr>
                                     <td>
-                                        <table class="features-top-row" width="100%" border="0" cellspacing="0"
+                                        <table class="features-middle-row" width="100%" border="0" cellspacing="0"
                                             cellpadding="0" align="left" style="padding: 0;  background: #fafafa;">
 
                                             <tr>
                                                 <td>
                                                     <!-- Start of middle row left column-->
-                                                    <table class="features-top-row-left" width="50%" border="0"
+                                                    <table class="features-middle-row-left" width="50%" border="0"
                                                         cellspacing="0" cellpadding="0" align="left"
                                                         style="padding: 15px;  background: #fafafa;">
                                                         <tr>
@@ -553,7 +627,7 @@
                                                     </table>
                                                     <!-- End of middle row left-->
                                                     <!-- Start of middle row right-->
-                                                    <table class="features-top-row-left" width="50%" border="0"
+                                                    <table class="features-middle-row-right" width="50%" border="0"
                                                         cellspacing="0" cellpadding="0" align="left"
                                                         style="padding: 15px;  background: #fafafa;">
                                                         <tr>
@@ -592,13 +666,13 @@
                                 <!-- Start of bottom row-->
                                 <tr>
                                     <td>
-                                        <table class="features-top-row" width="100%" border="0" cellspacing="0"
+                                        <table class="features-bottom-row" width="100%" border="0" cellspacing="0"
                                             cellpadding="0" align="left" style="padding: 0;  background: #fafafa;">
 
                                             <tr>
                                                 <td>
                                                     <!-- Start of bottom row left column-->
-                                                    <table class="features-top-row-left" width="50%" border="0"
+                                                    <table class="features-bottom-row-left" width="50%" border="0"
                                                         cellspacing="0" cellpadding="0" align="left"
                                                         style="padding: 15px;  background: #fafafa;">
                                                         <tr>
@@ -629,7 +703,7 @@
                                                     </table>
                                                     <!-- End of bottom row left-->
                                                     <!-- Start of bottom row right-->
-                                                    <table class="features-top-row-left" width="50%" border="0"
+                                                    <table class="features-bottom-row-right" width="50%" border="0"
                                                         cellspacing="0" cellpadding="0" align="left"
                                                         style="padding: 15px;  background: #fafafa;">
                                                         <tr>
